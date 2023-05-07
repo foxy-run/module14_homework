@@ -1,0 +1,47 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+
+.wrapper {
+    font-family: Roboto;
+    color: rgb(40, 39, 39);
+}
+
+.container {
+    max-width: 550px;
+    height: 100%;
+    background-color: rgb(219, 191, 203);
+}
+
+.header__row {
+    color: rgb(32, 5, 77);
+    text-align: center;
+    font-size: 36px;
+}
+
+.sender__row {
+    display: flex;
+    margin-top: 30px;
+    align-self: center;
+    margin-left: 150px
+    
+}
+
+.button__row button{
+    background-color: rgb(146, 117, 142);
+}
+
+.button__row button:hover {
+    cursor: pointer;
+}
+
+.images__row {
+    display: flex;
+    flex-flow: wrap; 
+    flex-direction: row; 
+    margin-top: 20px;
+    
+}
+
+.text__row {
+    margin-top: 25px;
+    margin-left: 150px;
+}
