@@ -1,0 +1,11 @@
+
+.text__row {
+    margin-top: 15px;
+}
+
+.image__row {
+    margin-top: 20px;
+    display: flex; 
+    flex-flow: wrap; 
+    flex-direction: row;
+}
