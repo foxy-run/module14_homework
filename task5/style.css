@@ -1,0 +1,26 @@
+.input__row {
+    display: flex;
+}
+
+.input__row button {
+    margin-left: 5px;
+}
+
+.page-number {
+    margin-left: 5px;
+}
+
+.limit {
+    margin-left: 5px;
+}
+
+.text__row {
+    margin-top: 25px;
+}
+
+.image__row {
+    display: flex;
+    flex-flow: wrap;
+    flex-direction: row;
+    margin-top: 30px;
+}
