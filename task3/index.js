@@ -24,7 +24,7 @@ function useRequest(url, callback) {
     const xhr = new XMLHttpRequest();
     xhr.open('GET', url, true);
 
-    xhr.onload = function() {
+    xhr.onload = function () {
         if (xhr.status !== 200) {
             printStatus("Статус ответа: ", xhr.status);
         } else {
@@ -36,7 +36,7 @@ function useRequest(url, callback) {
         }
     };
 
-    xhr.onerror = function() {
+    xhr.onerror = function () {
         printStatus("Ошибка! Статус ответа: ", xhr.status);
     };
 
@@ -47,7 +47,7 @@ function showResult(apiData) {
     let img = '';
 
     apiData.forEach(item => {
-        const imgBlock =     `<div>
+        const imgBlock = `<div>
                                 <img
                                   src="${item.download_url}"
                                   style="width: 150px; margin-right: 30px"

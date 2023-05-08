@@ -22,10 +22,9 @@
     margin-top: 30px;
     align-self: center;
     margin-left: 150px
-    
 }
 
-.button__row button{
+.button__row button {
     background-color: rgb(146, 117, 142);
 }
 
@@ -35,10 +34,10 @@
 
 .images__row {
     display: flex;
-    flex-flow: wrap; 
-    flex-direction: row; 
+    flex-flow: wrap;
+    flex-direction: row;
     margin-top: 20px;
-    
+
 }
 
 .text__row {

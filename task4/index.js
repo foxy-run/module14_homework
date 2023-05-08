@@ -33,7 +33,7 @@ function printStatus(text) {
 }
 
 function showrResult(photoUrl) {
-    const imgBlock =   `<img
+    const imgBlock = `<img
                           src="${photoUrl}"
                           style="margin-right: 30px"
                         />`;

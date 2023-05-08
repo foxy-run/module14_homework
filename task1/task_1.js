@@ -27,23 +27,23 @@ const xmlDOM = parser.parseFromString(xmlString, "text/xml");
 const listNode = xmlDOM.querySelector("list");
 const studentNode = listNode.querySelectorAll("student");
 const result = {
-    list: []
+  list: []
 };
 
 studentNode.forEach(element => {
-    const student = new Object();
-    const nameNode = element.querySelector("name");
-    const firstNameNode = element.querySelector("first");
-    const secondNameNode = element.querySelector("second");
-    const ageNode = element.querySelector("age");
-    const profNode = element.querySelector("prof");
-    const langAttribute = nameNode.getAttribute("lang");
+  const student = new Object();
+  const nameNode = element.querySelector("name");
+  const firstNameNode = element.querySelector("first");
+  const secondNameNode = element.querySelector("second");
+  const ageNode = element.querySelector("age");
+  const profNode = element.querySelector("prof");
+  const langAttribute = nameNode.getAttribute("lang");
 
-    student.name = firstNameNode.textContent + ' ' + secondNameNode.textContent;
-    student.age = Number(ageNode.textContent);
-    student.prof = profNode.textContent;
-    student.lang = langAttribute;
-    result.list.push(student);
+  student.name = firstNameNode.textContent + ' ' + secondNameNode.textContent;
+  student.age = Number(ageNode.textContent);
+  student.prof = profNode.textContent;
+  student.lang = langAttribute;
+  result.list.push(student);
 });
 
 console.log(result);
